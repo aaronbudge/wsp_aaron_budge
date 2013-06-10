@@ -165,12 +165,11 @@ img {
 	margin-bottom: 1.851852%;
 	padding: 0.925926% 1.851852%;
 	overflow: hidden;
-}*/
+}
 
-/*  MEDIA QUERIES =============================================================== */
+/*  MEDIA QUERIES MAX WIDTH 480PX =============================================================== */
 
 @media only screen and (max-width: 480px) {
-
 	.span_2_of_2 {
 		width: 100%; 
 	}
@@ -188,6 +187,8 @@ img {
 		width: 100%;
 	}
 }
+
+/*  MEDIA QUERIES MAX WIDTH 768PX =============================================================== */
 
 @media only screen and (max-width: 768px) {
 
