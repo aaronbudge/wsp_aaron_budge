@@ -112,7 +112,7 @@ h2 {
 h3 {
 	font: 1.750em/1.1 oswald, arial, sans-serif;
 	padding: 1.851852%;
-	border-bottom: 1px inset #e4e4e4;
+	border-bottom: 1px solid #555;
 }
 
 h4 {
@@ -144,10 +144,6 @@ a {
 ul {
 	list-style-type: none;
 	padding-left: 0.5em;
-}
-
-#intent h3 {
-	border-bottom: 1px solid #555;
 }
 
 .section h4 {
