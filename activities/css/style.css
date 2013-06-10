@@ -24,8 +24,8 @@ html,body,div,header,nav,p,aside,section,footer,h1,h2,h3,h4,h5,h6{
     clear:both;
 }
 /*.group {
-    zoom:1; /* For IE 6/7 (trigger hasLayout) */
-}
+    zoom:1; 
+}/* For IE 6/7 (trigger hasLayout) */
 
 /*  GRID COLUMN SETUP   =========================================================== */
 
