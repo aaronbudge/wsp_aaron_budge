@@ -50,7 +50,7 @@
 						</div>
 						<div class="column-2">
 							<label for="city">In what city will your event be held?</label>
-							<select name="city" id="city" required/>
+							<select name="city" id="city">
 								<option>Reno</option>
 								<option>Carson City</option>
 								<option>Fallon</option>
@@ -61,16 +61,16 @@
 							</select>
 						</div>
 						<div class="column-2">
-							<label for="date">What is the date of your event?</label>
-							<input type="date" name="date" id="date" required/>
-						</div>
-						<div class="column-3">
 							<label for="event-type">What type of event are you having?</label>
-							<select name="event-type" id="event-type" required/>
+							<select name="event-type" id="event-type">
 								<option>Private Party</option>
 								<option>School Dance</option>
 								<option>Corporate Event</option>
 							</select>
+						</div>
+						<div class="column-3">
+							<label for="date">What is the date of your event?</label>
+							<input type="date" name="date" id="date" required/>
 						</div>
 						<div class="column-3">
 							<label for="start-time">What time does your event start?</label>
@@ -80,10 +80,10 @@
 							<label for="end-time">What time does your event end?</label>
 							<input type="time" name="end-time" id="end-time" required/>
 						</div>
-						<div class="column-3">
-						<input type="checkbox" name="Agree" value="Terms" />
-						<label for="Agree">Please accept our <a href="#">Terms of Use</a></label>
-						</div>
+						<!--<div class="column-3">
+						<input type="checkbox" name="checkbox" value="Terms"/>
+						<label for="checkbox">Please accept our Terms of Use</label>
+						</div> -->
 						<button type="submit" name="request" class="button large">Send Your Request Now</button>
 					</form>
 				</section>
