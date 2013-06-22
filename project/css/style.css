@@ -1,25 +1,32 @@
-/* 
-Eric Meyer's CSS Reset
-http://meyerweb.com/eric/tools/css/reset/
-v1.0 | 20080212
-CSSresetr.com
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
 */
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
-del, dfn, em, font, img, ins, kbd, q, s, samp,
+del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td {
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	outline: 0;
 	font-size: 100%;
+	font: inherit;
 	vertical-align: baseline;
-	background: transparent;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
 }
 body {
 	line-height: 1;
@@ -35,22 +42,198 @@ q:before, q:after {
 	content: '';
 	content: none;
 }
-
-/* remember to define focus styles! */
-:focus {
-	outline: 0;
-}
-
-/* remember to highlight inserts somehow! */
-ins {
-	text-decoration: none;
-}
-del {
-	text-decoration: line-through;
-}
-
-/* tables still need 'cellspacing="0"' in the markup */
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+/*==========================================================================
+	Structure and Layout
+  =========================================================================*/
+  
+header, section, footer{
+	max-width: 980px;
+	margin: 0 auto;
+}
+
+#header-wrapper, #footer-wrapper{
+	background-color: #151515;
+	color: #606060;
+	overflow: hidden;
+}
+
+#header-wrapper h1{
+	font-size: 1.250em;
+	margin: 0;
+	padding: 0;
+	text-indent: -99000px;
+}
+
+.cta{
+	float: left;
+	width: 31.914894%; /* 300px/940px */
+}
+   
+  /*==========================================================================
+  	Global Styles
+    =========================================================================*/
+    
+body#home a#homenav,body#about a#aboutnav,body#events a#eventsnav,
+body#pricing a#pricingnav,body#contact a#contactnav,body#faqs a#faqsnav{
+	color: #0bbff0;
+}
+    
+body{
+	background-image: url(../images/bg_texture.jpg);
+	color: #ddd;
+	font: 400 1em/1.5em "Droid sans", sans-serif;
+}
+
+h1{
+	color: #ddd;
+	font: 300 3.000em/1.5em oswald, sans-serif;
+}
+
+h2{
+	color: #ddd;
+	font: 300 2.875em/1em oswald, sans-serif;	
+} 
+
+p{
+	padding-left: 1.250em;
+}
+    
+a {
+	color: #f4d64a;
+	font: 300 1.375em/1.5em oswald, sans-serif;
+	outline:0 none !important;
+	text-decoration: none;
+}
+
+
+img{
+	max-width: 100%;
+}
+
+img[alt*="logo"]{
+	float: left;
+	padding-bottom: 1.250em;
+	max-width: 300px;
+}
+    
+    /*==========================================================================
+    	Navigation
+      =========================================================================*/
+      
+ul {
+	list-style-type: none;
+	overflow: hidden;
+}
+
+nav li {
+	float: left;
+	margin-top: 65px;
+}
+
+nav li a{
+	color: #ddd;
+	font: 400 1.25em/1.5em oswald, sans-serif;
+}
+
+nav li a:hover{
+	color: #fff;
+}
+
+nav li a:active{
+	position: relative;
+	top: 2px;
+}
+
+header nav ul{
+	float: right;
+}
+
+nav li:nth-last-child(1n+2){
+	padding-right: 2.813em;
+}
+
+/*==========================================================================
+	Buttons
+  =========================================================================*/
+
+a.button{
+	font: 300 1.500em/1.5em oswald, sans-serif;
+	position: relative;
+	top: 50px;
+}
+
+.button{
+	border-top: 1px solid #0aaad6;
+	background-color:#0bbff0;
+	background: -webkit-gradient(linear, left top, left bottom, from(#0bbff0), to(#09a2cb));
+	background: -webkit-linear-gradient(top, #0bbff0, #09a2cb);
+	background: -moz-linear-gradient(top, #0bbff0, #09a2cb);
+	background: -ms-linear-gradient(top, #0bbff0, #09a2cb);
+	background: -o-linear-gradient(top, #0bbff0, #09a2cb);
+	padding:0.417em;
+	color:#fff;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+	-moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+	box-shadow: rgba(0,0,0,1) 0 1px 0;
+	text-shadow: rgba(0,0,0,.4) 0 1px 0;
+}
+
+.button:hover {
+   background: -webkit-gradient(linear, left top, left bottom, from(#09a2cb), to(#0bbff0));
+   background: -webkit-linear-gradient(top, #09a2cb, #0bbff0);
+   background: -moz-linear-gradient(top, #09a2cb, #0bbff0);
+   background: -ms-linear-gradient(top, #09a2cb, #0bbff0);
+   background: -o-linear-gradient(top, #09a2cb, #0bbff0);
+   }
+   
+.button:active {
+   background: #09a2cb;
+   }
+
+/*==========================================================================
+	Home Page Styles
+  =========================================================================*/
+#main-cta{
+	margin: 2.578em auto;
+}
+
+#sub-cta{
+	background-color: #151515;
+	margin: 2.578em 0 1.250;
+}
+
+.cta h1{
+	color: #ee3591;
+	font: 300 1.750em/1.2em oswald, sans-serif;
+	padding: 1.250em 0;
+}
+
+.cta p{
+	clear: left;
+}
+
+img[alt*="icon"]{
+	float: left;
+	padding: 1.250em;
+}
+
+/*==========================================================================
+	Footer
+  =========================================================================*/
+
+#footer-wrapper{
+	clear: both;
+}
+
+footer p{
+	font: 400 0.813em/1.5em "Droid sans", sans-serif;
+	padding: 1.188em;
 }
