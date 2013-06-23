@@ -174,11 +174,11 @@ nav li:nth-last-child(1n+2){
   =========================================================================*/
 
 a.button{
-	font: 300 1.500em/1.5em oswald, sans-serif;
+	font: 300 1.500em/1.250em oswald, sans-serif;
 	margin-top: 2.04082%;
 }
 
-.button{
+.button, button{
 	display: inline-block;
 	border-top: 1px solid #0aaad6;
 	background-color:#0bbff0;
@@ -198,7 +198,7 @@ a.button{
 	text-shadow: rgba(0,0,0,.4) 0 1px 0;
 }
 
-.button:hover {
+.button:hover, button:hover {
    background: -webkit-gradient(linear, left top, left bottom, from(#09a2cb), to(#0bbff0));
    background: -webkit-linear-gradient(top, #09a2cb, #0bbff0);
    background: -moz-linear-gradient(top, #09a2cb, #0bbff0);
@@ -206,7 +206,7 @@ a.button{
    background: -o-linear-gradient(top, #09a2cb, #0bbff0);
    }
    
-.button:active {
+.button:active, button:active {
    background: #09a2cb;
    }
 
@@ -334,10 +334,51 @@ form{
 	background-color: #151515;
 	padding: 2.040816%;
 	margin-bottom: 2.040816%;
+	overflow: hidden;
 }
 
-form label{
+label{
+	padding-left: 5px;
+}
+
+input, button, select{
 	display: block;
+	width: 300px;
+	height: 35px;
+}
+
+select{
+	margin: 5px 0 23px;
+	padding-top: 10px;
+}
+
+input{
+	color: #ddd;
+	font: 300 .875em/1.250em "Droid sans", sans-serif;
+	border: none;
+	border-top: 2px solid #000;
+	border-left: 2px solid #000;
+	box-shadow: 1px 2px 0 #2f2f2f;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	background-color: #151515;
+	margin: 5px 0 20px;
+}
+
+input[type="button"]{
+	font: 300 1.500em/1.250em oswald, sans-serif;
+	margin-top: 1.020408%;
+	height: auto;
+}
+
+.column-1, .column-2{
+	float: left;
+	margin-right: 1.530612%;
+}
+
+.column-3{
+	float: left;
 }
 
 /*==========================================================================

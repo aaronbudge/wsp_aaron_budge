@@ -37,21 +37,15 @@
 					<form method="post" action="#">
 						<div class="column-1">
 							<label for="first-name">First Name</label>
-							<input type="text" name="first-name" id="first-name" required/>
-						</div>
-						<div class="column-1">
+							<input type="text" placeholder="First Name" name="first-name" id="first-name" required/>
 							<label for="last-name">Last Name</label>
-							<input type="text" name="last-name" id="last-name" required/>
-						</div>
-						<div class="column-1">
+							<input type="text" placeholder="Last Name" name="last-name" id="last-name" required/>
 							<label for="email">Email Address</label>
-							<input type="email" name="email" id="email" required/>
+							<input type="email" placeholder="example@domain.com" name="email" id="email" required/>
 						</div>					
 						<div class="column-2">
 							<label for="phone">Phone Number</label>
-							<input type="tel" name="phone" id="phone" required/>
-						</div>
-						<div class="column-2">
+							<input type="tel" placeholder="775-123-4567" name="phone" id="phone" required/>
 							<label for="city">In what city will your event be held?</label>
 							<select name="city" id="city">
 								<option>Reno</option>
@@ -62,8 +56,6 @@
 								<option>Sparks</option>
 								<option>Yerington</option>
 							</select>
-						</div>
-						<div class="column-2">
 							<label for="event-type">What type of event are you having?</label>
 							<select name="event-type" id="event-type">
 								<option>Private Party</option>
@@ -73,17 +65,13 @@
 						</div>
 						<div class="column-3">
 							<label for="date">What is the date of your event?</label>
-							<input type="date" name="date" id="date" required/>
-						</div>
-						<div class="column-3">
+							<input type="date" name="date" id="date"/>
 							<label for="start-time">What time does your event start?</label>
-							<input type="time" name="start-time" id="start-time" required/>
-						</div>
-						<div class="column-3">
+							<input type="time" name="start-time" id="start-time"/>
 							<label for="end-time">What time does your event end?</label>
-							<input type="time" name="end-time" id="end-time" required/>
+							<input type="time" name="end-time" id="end-time"/>
+							<input class="button" name="submit" type="button" value="Send Your Request Now"/>
 						</div>
-						<button type="submit" name="request" class="button large">Send Your Request Now</button>
 					</form>
 				</section>
 			<div id="footer-wrapper">
