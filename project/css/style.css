@@ -1,54 +1,5 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
 /*==========================================================================
-	Structure and Layout
+	Page Layout
   =========================================================================*/
   
 header, section, footer, blockquote{
@@ -62,6 +13,20 @@ header, section, footer, blockquote{
 	overflow: hidden;
 }
 
+body{
+	background-image: url(../images/bg_texture.jpg);
+	color: #ddd;
+	font: 400 1em/1.5em "Droid sans", sans-serif;
+}
+
+p, ul{
+	padding: 2.040816% 0;
+}
+   
+  /*==========================================================================
+  	Headings and Typography
+    =========================================================================*/
+    
 #header-wrapper h1{
 	font-size: 1.250em;
 	margin: 0;
@@ -69,73 +34,60 @@ header, section, footer, blockquote{
 	text-indent: -99000px;
 }
 
-#main{
-	margin: 6.122449% auto;
-}
-
-#sub-cta{
-	background-color: #151515;
-	margin-top: 2.040816%;
-	margin-bottom: 2.040816%;
-	overflow: hidden;
-}
-
-.cta{
-	float: left;
-	padding: 0.680272%;
-	width: 31.972789%; /* 326px/980px */
-}
-
-.cta a{
-	float: right;
-}
-   
-  /*==========================================================================
-  	Global Styles
-    =========================================================================*/
-    
-body#home a#homenav,body#about a#aboutnav,body#events a#eventsnav,
-body#pricing a#pricingnav,body#contact a#contactnav,body#faqs a#faqsnav{
-	color: #0bbff0;
-}
-    
-body{
-	background-image: url(../images/bg_texture.jpg);
-	color: #ddd;
-	font: 400 1em/1.5em "Droid sans", sans-serif;
-}
-
-h1, h2, h3, h4{
+h1, h2{
 	color: #ee3591;
 	font: 300 2.250em/1.250em oswald, sans-serif;
 	margin: 1.020408% 0;
 	padding: 1.020408% 0;
 }
 
-p, ul{
-	padding: 2.040816% 0;
+.title{
+	color: #fff;
+	font: 300 3.000em/1.250em oswald, sans-serif;
+	padding: 0 10.204082%;
+	text-align: center;
 }
-    
-a {
-	color: #f4d64a;
-	font: 300 1.375em/1.5em oswald, sans-serif;
-	outline:0 none !important;
-	text-decoration: none;
+
+blockquote p {
+	color: #fff;
+	text-align: center;
+	font: italic 300 1.250em/1.250em "Droid sans", sans-serif;
 }
+
+/*==========================================================================
+   Images
+  =========================================================================*/
 
 img{
 	max-width: 100%;
+	height: auto;
 }
 
 img[alt*="logo"]{
 	float: left;
-	padding-bottom: 1.250em;
+	padding-bottom: 2.040816%;
 	max-width: 300px;
 }
+
+img[alt*="icon"]{
+	float: left;
+	padding: 2.040816% 2.040816% 2.040816% 0;
+	max-width: 33%;
+}
+
+#event-types img{
+	border: 3px solid #404040;
+	float: left;
+}
     
-    /*==========================================================================
-    	Navigation
-      =========================================================================*/
+/*==========================================================================
+   Navigation
+  =========================================================================*/
+  
+body#home a#homenav,body#about a#aboutnav,body#events a#eventsnav,
+body#pricing a#pricingnav,body#contact a#contactnav,body#faqs a#faqsnav{
+	color: #0bbff0;
+}
       
 ul {
 	list-style-type: none;
@@ -170,12 +122,25 @@ nav li:nth-last-child(1n+2){
 }
 
 /*==========================================================================
-	Buttons
+	Buttons and Links
   =========================================================================*/
+
+a {
+	color: #f4d64a;
+	font: 300 1.375em/1.5em oswald, sans-serif;
+	outline:0 none !important;
+	text-decoration: none;
+}
+
+p > a{
+	margin: 2.050816%;
+}
 
 a.button{
 	font: 300 1.500em/1.250em oswald, sans-serif;
 	margin-top: 2.04082%;
+	text-align: center;
+	
 }
 
 .button, button{
@@ -187,7 +152,7 @@ a.button{
 	background: -moz-linear-gradient(top, #0bbff0, #09a2cb);
 	background: -ms-linear-gradient(top, #0bbff0, #09a2cb);
 	background: -o-linear-gradient(top, #0bbff0, #09a2cb);
-	padding:0.417em;
+	padding: 2.040816%;
 	color:#fff;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
@@ -210,39 +175,88 @@ a.button{
    background: #09a2cb;
    }
 
+ /*==========================================================================
+   	Forms
+   =========================================================================*/
+  
+form{
+   	background-color: #151515;
+   	padding: 2.040816%;
+   	margin-bottom: 2.040816%;
+   	overflow: hidden;
+   }
+   
+label{
+   	padding-left: 5px;
+   }
+   
+input, button, select{
+   	display: block;
+   	width: 300px;
+   	height: 35px;
+   }
+   
+select{
+   	margin: 5px 0 23px;
+   	padding-top: 10px;
+   }
+   
+input{
+   	color: #ddd;
+   	font: 300 .875em/1.250em "Droid sans", sans-serif;
+   	border: none;
+   	border-top: 2px solid #000;
+   	border-left: 2px solid #000;
+   	box-shadow: 1px 2px 0 #2f2f2f;
+   	-moz-border-radius: 5px;
+   	-webkit-border-radius: 5px;
+   	border-radius: 5px;
+   	background-color: #151515;
+   	margin: 5px 0 20px;
+   }
+   
+ input[type="button"]{
+   	font: 300 1.500em/1.250em oswald, sans-serif;
+   	margin-top: 1.020408%;
+   	height: auto;
+   }
+
 /*==========================================================================
-	Home Styles
+	Page Styles
   =========================================================================*/
 
-#main h1{
-	color: #fff;
-	font: 300 3.000em/1.250em oswald, sans-serif;
-	max-width: 75%;
-	padding: 0;
+/*======Home======*/
+
+#main{
+	margin: 6.122449% auto;
 }
 
-p > a{
-	margin: 2.050816%;
+#sub-cta{
+	background-color: #151515;
+	margin-top: 2.040816%;
+	margin-bottom: 2.040816%;
+	overflow: hidden;
+}
+
+.cta{
+	float: left;
+	margin: 0.680272%;
+	padding: 0.680272%;
+	position: relative;
+	width: 30.612245%; /* 300px/980px */
 }
 
 .cta h1{
 	color: #ee3591;
 	font: 300 1.750em/1.2em oswald, sans-serif;
-	padding: 1.250em 1.250em 1.250em 0;
+	padding: 2.040816% 2.040816%;
 }
 
 .cta p{
 	clear: left;
 }
 
-img[alt*="icon"]{
-	float: left;
-	padding: 1.250em 1.250em 1.250em 0;
-}
-
-/*==========================================================================
-	About Us Styles
-  =========================================================================*/
+/*======About======*/
 
 #welcome{
 	background-color: #151515;
@@ -250,34 +264,12 @@ img[alt*="icon"]{
 	margin: 2.040816% auto;
 }
 
-/*==========================================================================
-	Events Styles
-  =========================================================================*/
-blockquote{
-	max-width: 75%;
-}
-
-blockquote h1{
-	color: #fff;
-	font: 300 3.000em/1.250em oswald, sans-serif;
-	text-align: center;
-}
-
-blockquote p {
-	color: #fff;
-	text-align: center;
-	font: italic 300 1.250em/1.250em "Droid sans", sans-serif;
-}
+/*======Events======*/
 
 #event-types{
 	background-color: #151515;
 	padding: 2.040816%;
 	margin: 2.040816% auto;
-}
-
-#event-types img{
-	border: 3px solid #404040;
-	float: left;
 }
 
 #event-types p {
@@ -291,18 +283,13 @@ blockquote p {
 .bevel h2, .bevel h3, .bevel h4, .bevel li{
 	float: left;
 	margin: 0;
-	padding: 0 2.813em 0 2.040816%;
+	padding: 0 4.591837% 0 2.040816%;
 }
 
+/*======Pricing======*/
 
-/*==========================================================================
-	Pricing Styles
-  =========================================================================*/
-  
-  
-/*==========================================================================
-  	Contact Us Styles
-  =========================================================================*/
+
+/*======Contact======*/
 
 #forms li, #forms li a{
 	float: left;
@@ -330,48 +317,6 @@ blockquote p {
 	margin: 0;
 }
 
-form{
-	background-color: #151515;
-	padding: 2.040816%;
-	margin-bottom: 2.040816%;
-	overflow: hidden;
-}
-
-label{
-	padding-left: 5px;
-}
-
-input, button, select{
-	display: block;
-	width: 300px;
-	height: 35px;
-}
-
-select{
-	margin: 5px 0 23px;
-	padding-top: 10px;
-}
-
-input{
-	color: #ddd;
-	font: 300 .875em/1.250em "Droid sans", sans-serif;
-	border: none;
-	border-top: 2px solid #000;
-	border-left: 2px solid #000;
-	box-shadow: 1px 2px 0 #2f2f2f;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
-	background-color: #151515;
-	margin: 5px 0 20px;
-}
-
-input[type="button"]{
-	font: 300 1.500em/1.250em oswald, sans-serif;
-	margin-top: 1.020408%;
-	height: auto;
-}
-
 .column-1, .column-2{
 	float: left;
 	margin-right: 1.530612%;
@@ -381,9 +326,7 @@ input[type="button"]{
 	float: left;
 }
 
-/*==========================================================================
-	FAQ Styles
-  =========================================================================*/
+/*======FAQ's======*/
 
 #questions{
 	background-color: #151515;
@@ -414,5 +357,58 @@ input[type="button"]{
 
 footer p{
 	font: 400 0.813em/1.5em "Droid sans", sans-serif;
-	padding: 1.188em;
+	padding: 1.938776%;
 }
+
+/*==========================================================================
+	Media Queries
+  =========================================================================*/
+  
+  /*======iPad Landscape======*/
+  
+  @media screen and (min-width: 768px) and (max-width: 1024px){
+  
+
+  }
+  
+  /*======iPad Portrait======*/
+  
+  @media screen and (min-width: 481px) and (max-width: 768px){
+  
+  .cta{
+  	width: 47.395833%;
+  }
+  
+  .cta:nth-child(3n){
+  	border-top: 1px #303030 outset;
+  	clear: both;
+  	width: 100%;
+  }
+  
+	img[alt*="icon"]{
+		max-width: 25%;
+	}
+  
+  }
+  
+  /*======iPhone======*/
+  
+  @media screen and (max-width: 480px){
+  
+  .cta{
+  	border-bottom: 1px #303030 inset;
+  	clear: both;
+  	width: auto;
+  }
+  
+  }
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
