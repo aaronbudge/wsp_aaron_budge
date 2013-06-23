@@ -51,7 +51,7 @@ table {
 	Structure and Layout
   =========================================================================*/
   
-header, section, footer{
+header, section, footer, blockquote{
 	max-width: 980px;
 	margin: 0 auto;
 }
@@ -69,9 +69,25 @@ header, section, footer{
 	text-indent: -99000px;
 }
 
+#main{
+	margin: 6.122449% auto;
+}
+
+#sub-cta{
+	background-color: #151515;
+	margin-top: 2.040816%;
+	margin-bottom: 2.040816%;
+	overflow: hidden;
+}
+
 .cta{
 	float: left;
-	width: 31.914894%; /* 300px/940px */
+	padding: 0.680272%;
+	width: 31.972789%; /* 326px/980px */
+}
+
+.cta a{
+	float: right;
 }
    
   /*==========================================================================
@@ -89,18 +105,15 @@ body{
 	font: 400 1em/1.5em "Droid sans", sans-serif;
 }
 
-h1{
-	color: #ddd;
-	font: 300 3.000em/1.5em oswald, sans-serif;
+h1, h2, h3, h4{
+	color: #ee3591;
+	font: 300 2.250em/1.250em oswald, sans-serif;
+	margin: 1.020408% 0;
+	padding: 1.020408% 0;
 }
 
-h2{
-	color: #ddd;
-	font: 300 2.875em/1em oswald, sans-serif;	
-} 
-
-p{
-	padding-left: 1.250em;
+p, ul{
+	padding: 2.040816% 0;
 }
     
 a {
@@ -109,7 +122,6 @@ a {
 	outline:0 none !important;
 	text-decoration: none;
 }
-
 
 img{
 	max-width: 100%;
@@ -132,7 +144,7 @@ ul {
 
 nav li {
 	float: left;
-	margin-top: 65px;
+	margin-top: 45px;
 }
 
 nav li a{
@@ -163,11 +175,11 @@ nav li:nth-last-child(1n+2){
 
 a.button{
 	font: 300 1.500em/1.5em oswald, sans-serif;
-	position: relative;
-	top: 50px;
+	margin-top: 2.04082%;
 }
 
 .button{
+	display: inline-block;
 	border-top: 1px solid #0aaad6;
 	background-color:#0bbff0;
 	background: -webkit-gradient(linear, left top, left bottom, from(#0bbff0), to(#09a2cb));
@@ -199,21 +211,24 @@ a.button{
    }
 
 /*==========================================================================
-	Home Page Styles
+	Home Styles
   =========================================================================*/
-#main-cta{
-	margin: 2.578em auto;
+
+#main h1{
+	color: #fff;
+	font: 300 3.000em/1.250em oswald, sans-serif;
+	max-width: 75%;
+	padding: 0;
 }
 
-#sub-cta{
-	background-color: #151515;
-	margin: 2.578em 0 1.250;
+p > a{
+	margin: 2.050816%;
 }
 
 .cta h1{
 	color: #ee3591;
 	font: 300 1.750em/1.2em oswald, sans-serif;
-	padding: 1.250em 0;
+	padding: 1.250em 1.250em 1.250em 0;
 }
 
 .cta p{
@@ -222,7 +237,130 @@ a.button{
 
 img[alt*="icon"]{
 	float: left;
-	padding: 1.250em;
+	padding: 1.250em 1.250em 1.250em 0;
+}
+
+/*==========================================================================
+	About Us Styles
+  =========================================================================*/
+
+#welcome{
+	background-color: #151515;
+	padding: 2.040816%;
+	margin: 2.040816% auto;
+}
+
+/*==========================================================================
+	Events Styles
+  =========================================================================*/
+blockquote{
+	max-width: 75%;
+}
+
+blockquote h1{
+	color: #fff;
+	font: 300 3.000em/1.250em oswald, sans-serif;
+	text-align: center;
+}
+
+blockquote p {
+	color: #fff;
+	text-align: center;
+	font: italic 300 1.250em/1.250em "Droid sans", sans-serif;
+}
+
+#event-types{
+	background-color: #151515;
+	padding: 2.040816%;
+	margin: 2.040816% auto;
+}
+
+#event-types img{
+	border: 3px solid #404040;
+	float: left;
+}
+
+#event-types p {
+	padding-left: 33.333333%;
+}
+
+#event-types > ul{
+	padding-left: 33.333333%;
+}
+
+.bevel h2, .bevel h3, .bevel h4, .bevel li{
+	float: left;
+	margin: 0;
+	padding: 0 2.813em 0 2.040816%;
+}
+
+
+/*==========================================================================
+	Pricing Styles
+  =========================================================================*/
+  
+  
+/*==========================================================================
+  	Contact Us Styles
+  =========================================================================*/
+
+#forms li, #forms li a{
+	float: left;
+	padding: 1.530612%;
+	margin: 0;
+}
+
+#forms ul{
+	margin: 0;
+	padding: 0;
+}
+
+#active-tab a{
+	color: #ee3591;
+}
+
+#active-tab{
+	background-color: #151515;
+	-webkit-border-top-left-radius: 10px;
+	-webkit-border-top-right-radius: 10px;
+	-moz-border-radius-topleft: 10px;
+	-moz-border-radius-topright: 10px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	margin: 0;
+}
+
+form{
+	background-color: #151515;
+	padding: 2.040816%;
+	margin-bottom: 2.040816%;
+}
+
+form label{
+	display: block;
+}
+
+/*==========================================================================
+	FAQ Styles
+  =========================================================================*/
+
+#questions{
+	background-color: #151515;
+	padding: 2.040816%;
+	margin: 2.040816% auto;
+}
+
+#questions h2{
+	font: 300 1.375em/1.5em oswald, sans-serif;
+	margin: 0;
+	padding: 2.040816% 0 0 0;
+}
+
+#requests a, #equipment a, #set-up a, #locations a,
+#requirements a, #payments a{
+	font: 300 0.75em/1em "Droid sans", sans-serif;
+	margin: 0;
+	padding: 0 0 0 2.040816%;
 }
 
 /*==========================================================================
