@@ -3,8 +3,11 @@
   =========================================================================*/
   
 header, section, footer, blockquote{
+	/*border: 1px solid #333;*/
 	max-width: 980px;
-	margin: 0 auto;
+	margin: 2.040816% auto;/* 20px/980px */
+	padding: 0 2.040816%;/* 20px/980px */
+	overflow: hidden;
 }
 
 #header-wrapper, #footer-wrapper{
@@ -13,20 +16,6 @@ header, section, footer, blockquote{
 	overflow: hidden;
 }
 
-body{
-	background-image: url(../images/bg_texture.jpg);
-	color: #ddd;
-	font: 400 1em/1.5em "Droid sans", sans-serif;
-}
-
-p, ul{
-	padding: 2.040816% 0;
-}
-   
-  /*==========================================================================
-  	Headings and Typography
-    =========================================================================*/
-    
 #header-wrapper h1{
 	font-size: 1.250em;
 	margin: 0;
@@ -34,12 +23,36 @@ p, ul{
 	text-indent: -99000px;
 }
 
-h1, h2{
+header{
+	margin-top: 0;
+}
+
+body{
+	background-image: url(../images/bg_texture.jpg);
+	color: #ddd;
+	font: 400 1em/1.5em "Droid sans", sans-serif;
+}
+
+  /*==========================================================================
+  	Headings and Typography
+    =========================================================================*/
+h1, h2, h3, h4{
 	color: #ee3591;
 	font: 300 2.250em/1.250em oswald, sans-serif;
 	margin: 1.020408% 0;
 	padding: 1.020408% 0;
 }
+
+p{
+	padding: 2.040816% 0;
+}
+
+a {
+	color: #f4d64a;
+	font: 300 1.375em/1.5em oswald, sans-serif;
+	outline:0 none !important;
+	text-decoration: none;
+}    
 
 .title{
 	color: #fff;
@@ -54,32 +67,11 @@ blockquote p {
 	font: italic 300 1.250em/1.250em "Droid sans", sans-serif;
 }
 
-/*==========================================================================
-   Images
-  =========================================================================*/
-
-img{
-	max-width: 100%;
-	height: auto;
+.cta h1{
+	color: #ee3591;
+	font: 300 1.750em/1.2em oswald, sans-serif;
 }
 
-img[alt*="logo"]{
-	float: left;
-	padding-bottom: 2.040816%;
-	max-width: 300px;
-}
-
-img[alt*="icon"]{
-	float: left;
-	padding: 2.040816% 2.040816% 2.040816% 0;
-	max-width: 33%;
-}
-
-#event-types img{
-	border: 3px solid #404040;
-	float: left;
-}
-    
 /*==========================================================================
    Navigation
   =========================================================================*/
@@ -94,14 +86,22 @@ ul {
 	overflow: hidden;
 }
 
+nav ul{
+	float: right;
+}
+
 nav li {
 	float: left;
 	margin-top: 45px;
 }
 
+nav li:nth-last-child(1n+2){
+	padding-right: 3em;
+}
+
 nav li a{
 	color: #ddd;
-	font: 400 1.25em/1.5em oswald, sans-serif;
+	font-size: 1.50em;
 }
 
 nav li a:hover{
@@ -113,28 +113,28 @@ nav li a:active{
 	top: 2px;
 }
 
-header nav ul{
-	float: right;
+/*==========================================================================
+   Images
+  =========================================================================*/
+
+img{
+	float: left;
+	max-width: 100%;
+	height: auto;
 }
 
-nav li:nth-last-child(1n+2){
-	padding-right: 2.813em;
+img[alt*="icon"]{
+	padding: 0 6.134969% 0 0; /* 20px/326px*/
+	max-width: 25%;
 }
 
+#event-type img{
+	border: 3px solid #404040;
+}
+    
 /*==========================================================================
 	Buttons and Links
   =========================================================================*/
-
-a {
-	color: #f4d64a;
-	font: 300 1.375em/1.5em oswald, sans-serif;
-	outline:0 none !important;
-	text-decoration: none;
-}
-
-p > a{
-	margin: 2.050816%;
-}
 
 a.button{
 	font: 300 1.500em/1.250em oswald, sans-serif;
@@ -169,37 +169,46 @@ a.button{
    background: -moz-linear-gradient(top, #09a2cb, #0bbff0);
    background: -ms-linear-gradient(top, #09a2cb, #0bbff0);
    background: -o-linear-gradient(top, #09a2cb, #0bbff0);
-   }
+}
    
 .button:active, button:active {
    background: #09a2cb;
-   }
+}
 
  /*==========================================================================
    	Forms
    =========================================================================*/
   
-form{
+#forms{
    	background-color: #151515;
    	padding: 2.040816%;
    	margin-bottom: 2.040816%;
    	overflow: hidden;
-   }
+}
+   
+#forms ul li{
+	margin-right: 2.040816%; /* 20px/980px */
+}
+   
+#forms ul li:nth-child(1n){
+	float: left;
+}
    
 label{
    	padding-left: 5px;
-   }
+}
+   
+select{
+	min-height: 60px;
+	margin: 5px 0 23px;
+	padding-top: 10px;
+}
    
 input, button, select{
    	display: block;
    	width: 300px;
    	height: 35px;
-   }
-   
-select{
-   	margin: 5px 0 23px;
-   	padding-top: 10px;
-   }
+}
    
 input{
    	color: #ddd;
@@ -213,94 +222,76 @@ input{
    	border-radius: 5px;
    	background-color: #151515;
    	margin: 5px 0 20px;
-   }
+}
    
  input[type="button"]{
    	font: 300 1.500em/1.250em oswald, sans-serif;
    	margin-top: 1.020408%;
    	height: auto;
-   }
+}
 
 /*==========================================================================
 	Page Styles
   =========================================================================*/
+  
+#welcome, #event-type, #questions{
+	background-color: #151515;
+	padding: 2.040816%;
+}
 
 /*======Home======*/
 
-#main{
-	margin: 6.122449% auto;
-}
-
 #sub-cta{
 	background-color: #151515;
-	margin-top: 2.040816%;
-	margin-bottom: 2.040816%;
 	overflow: hidden;
 }
 
 .cta{
+	/*border: 1px solid #333;*/
 	float: left;
-	margin: 0.680272%;
-	padding: 0.680272%;
-	position: relative;
-	width: 30.612245%; /* 300px/980px */
-}
-
-.cta h1{
-	color: #ee3591;
-	font: 300 1.750em/1.2em oswald, sans-serif;
-	padding: 2.040816% 2.040816%;
-}
-
-.cta p{
-	clear: left;
-}
-
-/*======About======*/
-
-#welcome{
-	background-color: #151515;
-	padding: 2.040816%;
-	margin: 2.040816% auto;
+	padding: 2.040816%; /* 20px/980px */
+	width: 29.251701%; /* 286.666667px/980px */
 }
 
 /*======Events======*/
 
-#event-types{
-	background-color: #151515;
-	padding: 2.040816%;
-	margin: 2.040816% auto;
-}
-
-#event-types p {
+#event-type p, #event-type ul {
 	padding-left: 33.333333%;
+	padding-top: 2.040816%;
 }
 
 #event-types > ul{
 	padding-left: 33.333333%;
 }
-
 .bevel h2, .bevel h3, .bevel h4, .bevel li{
 	float: left;
-	margin: 0;
-	padding: 0 4.591837% 0 2.040816%;
+	/*margin: 0;*/
+	padding: 0 2.040816%;
 }
 
 /*======Pricing======*/
 
+#standard, #premium, #ultimate{
+	background-color: #151515;
+	float: left;
+	padding: 2.040816%; /* 20px/980px */
+	margin: 2.040816%; 
+	width: 25.170068%; /* 286.666667px/980px */
+}
+
+#event-pricing a.button{
+	display: block;
+}
+
+#event-pricing ul li, #event-pricing h2, #event-pricing p{
+	text-align: center;
+}
+
+#event-pricing ul{
+	height: 350px;
+}
 
 /*======Contact======*/
-
-#forms li, #forms li a{
-	float: left;
-	padding: 1.530612%;
-	margin: 0;
-}
-
-#forms ul{
-	margin: 0;
-	padding: 0;
-}
 
 #active-tab a{
 	color: #ee3591;
@@ -317,26 +308,10 @@ input{
 	margin: 0;
 }
 
-.column-1, .column-2{
-	float: left;
-	margin-right: 1.530612%;
-}
-
-.column-3{
-	float: left;
-}
-
 /*======FAQ's======*/
-
-#questions{
-	background-color: #151515;
-	padding: 2.040816%;
-	margin: 2.040816% auto;
-}
 
 #questions h2{
 	font: 300 1.375em/1.5em oswald, sans-serif;
-	margin: 0;
 	padding: 2.040816% 0 0 0;
 }
 
@@ -357,53 +332,52 @@ input{
 
 footer p{
 	font: 400 0.813em/1.5em "Droid sans", sans-serif;
-	padding: 1.938776%;
 }
 
 /*==========================================================================
 	Media Queries
   =========================================================================*/
   
-  /*======iPad Landscape======*/
+/*======iPad Landscape======*/
   
   @media screen and (min-width: 768px) and (max-width: 1024px){
   
-
-  }
+}
   
   /*======iPad Portrait======*/
   
   @media screen and (min-width: 481px) and (max-width: 768px){
   
-  .cta{
-  	width: 47.395833%;
-  }
+  	.cta{
+  		width: 46.395833%;
+  	}
   
-  .cta:nth-child(3n){
-  	border-top: 1px #303030 outset;
-  	clear: both;
-  	width: 100%;
-  }
+  	.cta:nth-child(3n){
+  		border-top: 1px #303030 outset;
+  		clear: both;
+  		width: 100%;
+  	}
   
 	img[alt*="icon"]{
 		max-width: 25%;
 	}
-  
-  }
+}
   
   /*======iPhone======*/
   
   @media screen and (max-width: 480px){
   
-  .cta{
-  	border-bottom: 1px #303030 inset;
-  	clear: both;
-  	width: auto;
-  }
+	img, .bevel, .cta, #forms li, #forms li a,
+	.column-1, .column-2, .column-3{
+		float: none;
+  	}
   
-  }
+  	#event-types p, #event-types>ul{
+  		padding-left: 0;
+  	}
   
-
+  
+}
   
   
   

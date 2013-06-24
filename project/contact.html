@@ -29,25 +29,22 @@
 				<section>
 					<h1 class="title"><em>Great Events</em> always start with <em>Great Music.</em></h1>
 				</section>
-				<section id="forms">
+				<section id="tabs">
 					<ul>
 						<li id="active-tab"><a href="contact.html">Request a Free Quote</a></li>
 						<li><a href="#">Get the Music List</a></li>
 						<li><a href="#">Contact Us</a></li>
 					</ul>
+				</section>
+				<section id="forms">
 					<form method="post" action="#">
-						<div class="column-1">
-							<label for="first-name">First Name</label>
-							<input type="text" placeholder="First Name" name="first-name" id="first-name" required/>
-							<label for="last-name">Last Name</label>
-							<input type="text" placeholder="Last Name" name="last-name" id="last-name" required/>
-							<label for="email">Email Address</label>
-							<input type="email" placeholder="example@domain.com" name="email" id="email" required/>
-						</div>					
-						<div class="column-2">
-							<label for="phone">Phone Number</label>
-							<input type="tel" placeholder="775-123-4567" name="phone" id="phone" required/>
-							<label for="city">In what city will your event be held?</label>
+						<ul>
+							<li><label for="first-name">First Name</label><input type="text" placeholder="First Name" name="first-name" id="first-name" required/></li>
+							<li><label for="phone">Phone Number</label><input type="tel" placeholder="775-123-4567" name="phone" id="phone" required/></li>
+							<li><label for="date">What is the date of your event?</label><input type="date" name="date" id="date"/></li>
+							<li><label for="last-name">Last Name</label><input type="text" placeholder="Last Name" name="last-name" id="last-name" required/></li>
+							<li><label for="start-time">What time does your event start?</label><input type="time" name="start-time" id="start-time"/></li>
+							<li><label for="city">In what city will your event be held?</label>
 							<select name="city" id="city">
 								<option>Reno</option>
 								<option>Carson City</option>
@@ -56,23 +53,18 @@
 								<option>Silver Springs</option>
 								<option>Sparks</option>
 								<option>Yerington</option>
-							</select>
-							<label for="event-type">What type of event are you having?</label>
+							</select></li>
+							<li><label for="email">Email Address</label><input type="email" placeholder="example@domain.com" name="email" id="email" required/></li>
+							<li><label for="end-time">What time does your event end?</label><input type="time" name="end-time" id="end-time"/></li>
+							<li><label for="event-type">What type of event are you having?</label>
 							<select name="event-type" id="event-type">
 								<option>Private Party</option>
 								<option>School Dance</option>
 								<option>Corporate Event</option>
-							</select>
-						</div>
-						<div class="column-3">
-							<label for="date">What is the date of your event?</label>
-							<input type="date" name="date" id="date"/>
-							<label for="start-time">What time does your event start?</label>
-							<input type="time" name="start-time" id="start-time"/>
-							<label for="end-time">What time does your event end?</label>
-							<input type="time" name="end-time" id="end-time"/>
-							<input class="button" name="submit" type="button" value="Send Your Request Now"/>
-						</div>
+							</select></li>
+						
+						<input class="button" name="submit" type="button" value="Send Your Request Now"/>
+						</ul>
 					</form>
 				</section>
 			<div id="footer-wrapper">
