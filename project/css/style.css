@@ -33,6 +33,18 @@ body{
 	font: 400 1em/1.5em "Droid sans", sans-serif;
 }
 
+#home #wrapper{
+	background: url(../images/cta_bg.png) center top no-repeat;
+}
+
+#events #wrapper{
+	background: url(../images/events_bg.png) center top no-repeat;
+}
+
+#contact #wrapper{
+	background: url(../images/contact_bg.png) center top no-repeat;
+}
+
   /*==========================================================================
   	Headings and Typography
     =========================================================================*/
@@ -59,6 +71,11 @@ a {
 	font: 300 3.000em/1.250em oswald, sans-serif;
 	padding: 0 10.204082%;
 	text-align: center;
+}
+
+#main h1{
+	color: #fff;
+	font: 300 3.000em/1.250em oswald, sans-serif;
 }
 
 blockquote p {
@@ -161,6 +178,7 @@ a.button{
 	-moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
 	box-shadow: rgba(0,0,0,1) 0 1px 0;
 	text-shadow: rgba(0,0,0,.4) 0 1px 0;
+	width: 300px;
 }
 
 .button:hover, button:hover {
@@ -206,7 +224,7 @@ select{
    
 input, button, select{
    	display: block;
-   	width: 300px;
+   	width: 291px;
    	height: 35px;
 }
    
@@ -293,6 +311,24 @@ input{
 
 /*======Contact======*/
 
+section#forms{
+	margin-top: 0;
+}
+
+ul li#active-tab{
+	position: relative;
+	margin-left: 0;
+}
+
+/*#tabs, #tabs ul li, #tabs ul li a {
+	margin-bottom: 0;
+}*/
+
+#tabs ul li{
+	float: left;
+	/*margin-right: 4.081632%; /* 20px/980px *!/*/
+}
+
 #active-tab a{
 	color: #ee3591;
 }
@@ -306,6 +342,7 @@ input{
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
 	margin: 0;
+	padding: 2.040816% 4.081632%;
 }
 
 /*======FAQ's======*/
