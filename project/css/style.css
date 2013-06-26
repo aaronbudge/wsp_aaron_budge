@@ -161,7 +161,7 @@ a.button{
 }
 
 .button, button{
-	display: inline-block;
+	display: block;
 	border-top: 1px solid #0aaad6;
 	background-color:#0bbff0;
 	background: -webkit-gradient(linear, left top, left bottom, from(#0bbff0), to(#09a2cb));
@@ -178,7 +178,7 @@ a.button{
 	-moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
 	box-shadow: rgba(0,0,0,1) 0 1px 0;
 	text-shadow: rgba(0,0,0,.4) 0 1px 0;
-	width: 300px;
+	max-width: 300px;
 }
 
 .button:hover, button:hover {
