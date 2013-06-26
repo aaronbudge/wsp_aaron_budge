@@ -103,7 +103,7 @@ ul {
 	overflow: hidden;
 }
 
-nav ul{
+nav {
 	float: right;
 }
 
@@ -201,6 +201,7 @@ a.button{
    	background-color: #151515;
    	padding: 2.040816%;
    	margin-bottom: 2.040816%;
+   	opacity: 0.85;
    	overflow: hidden;
 }
    
@@ -252,9 +253,10 @@ input{
 	Page Styles
   =========================================================================*/
   
-#welcome, #event-type, #questions{
+section#welcome, section#event-type, section#questions{
 	background-color: #151515;
 	padding: 2.040816%;
+	opacity: 0.75;
 }
 
 /*======Home======*/
@@ -343,6 +345,7 @@ ul li#active-tab{
 	border-top-right-radius: 10px;
 	margin: 0;
 	padding: 2.040816% 4.081632%;
+	opacity: 0.85;
 }
 
 /*======FAQ's======*/
@@ -375,13 +378,23 @@ footer p{
 	Media Queries
   =========================================================================*/
   
-/*======iPad Landscape======*/
+/*======iPad Landscape======
   
   @media screen and (min-width: 768px) and (max-width: 1024px){
   
+  img[alt*="logo"]{
+  display: block;
+  }
+  
+  nav ul{
+  	float: left;
+  	clear: left;
+  }
+  
+  
 }
   
-  /*======iPad Portrait======*/
+  ======iPad Portrait======
   
   @media screen and (min-width: 481px) and (max-width: 768px){
   
@@ -400,7 +413,7 @@ footer p{
 	}
 }
   
-  /*======iPhone======*/
+  ======iPhone======
   
   @media screen and (max-width: 480px){
   
@@ -414,7 +427,8 @@ footer p{
   	}
   
   
-}
+}*/
+
   
   
   
