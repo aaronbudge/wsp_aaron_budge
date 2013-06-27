@@ -230,7 +230,7 @@ select{
 	padding-top: 10px;
 }
    
-input, button, select{
+input, select{
    	display: block;
    	width: 291px;
    	height: 35px;
@@ -282,19 +282,34 @@ section#welcome, section#event-type, section#questions{
 
 /*======Events======*/
 
-#event-type p, #event-type ul {
+/*#event-type p, #event-type ul {
 	padding-left: 33.333333%;
 	padding-top: 2.040816%;
+}*/
+
+#event-type ul li{
+	float: left;
+	padding-left: 2.040816%;
+}
+/*.bevel h2, .bevel h3, .bevel h4, .bevel li{
+	float: left;
+	/*margin: 0;*!/
+	padding: 0 2.040816%;
+}*/
+
+/*.bevel ul{
+	float: right;
+	padding: 2.040816%;
 }
 
-#event-types > ul{
-	padding-left: 33.333333%;
-}
-.bevel h2, .bevel h3, .bevel h4, .bevel li{
+/*.bevel h2{
+	display: block;
 	float: left;
-	/*margin: 0;*/
-	padding: 0 2.040816%;
-}
+}*!/*/
+
+/*.bevel{
+	display: block;
+}*/
 
 /*======Pricing======*/
 
@@ -406,14 +421,14 @@ footer p{
 /* --------------------------- Global Styles ------------------------- */
 
   
-/*  img[alt*="logo"]{
+  img[alt*="logo"]{
   display: block;
   }
   
   nav ul{
   	float: left;
   	clear: left;
-  }*/
+  }
   
   /*home styles*/ 
   
@@ -429,8 +444,9 @@ footer p{
   	width: 100%;
   }
   
-    
-  
+  input.button{
+  	max-width: 100%;
+  }
      
 }
   
@@ -441,16 +457,6 @@ footer p{
 
 /* --------------------------- Global Styles ------------------------- */
   
-/*  	.cta{
-  		width: 46.395833%;
-  	}
-  
-  	.cta:nth-child(3n){
-  		border-top: 1px #303030 outset;
-  		clear: both;
-  		width: 100%;
-  	}*/
-  
 	img[alt*="icon"]{
 		max-width: 25%;
 	}
@@ -459,11 +465,20 @@ footer p{
 		float: left;
 	}
 	
-	.cta, .button, button, input, select, form ul li{
+	.cta, input, select, form ul li{
 		float: none;
 		width: 100%;
 	}
 	
+	#standard, #premium, #ultimate{
+		float: none;
+		max-width: 100%;
+		margin: 2.040816% auto;
+	}
+	
+	.button, button, input.button{
+		max-width: 100%;
+	}
 	
 }
   
@@ -474,7 +489,6 @@ footer p{
 
 /* --------------------------- Global Styles ------------------------- */
  
-  	
   	.cta{
   		float: none;
   		width: 100%;
@@ -484,8 +498,7 @@ footer p{
   		float: left;
   	}
   	
-  	.button, button, a.button{
-  		display: block;
+  	.button, button, input.button{
   		max-width: 100%;
   	}
   	
@@ -499,7 +512,7 @@ footer p{
   		max-width: 100%;
   		margin: 2.040816% auto;
   	}
-  
+
   
 }
 
