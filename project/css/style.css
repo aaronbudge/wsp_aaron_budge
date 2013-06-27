@@ -197,19 +197,26 @@ a.button{
    	Forms
    =========================================================================*/
   
+form{
+	overflow: hidden;
+}
+
 #forms{
    	background-color: #151515;
    	padding: 2.040816%;
    	margin-bottom: 2.040816%;
    	opacity: 0.85;
-   	overflow: hidden;
 }
    
 #forms ul li{
 	margin-right: 2.040816%; /* 20px/980px */
 }
    
-#forms ul li:nth-child(1n){
+/*#forms ul li:nth-child(1n){
+	float: left;
+}*/
+
+#forms ul{
 	float: left;
 }
    
@@ -296,19 +303,32 @@ section#welcome, section#event-type, section#questions{
 	float: left;
 	padding: 2.040816%; /* 20px/980px */
 	margin: 2.040816%; 
-	width: 25.170068%; /* 286.666667px/980px */
+	max-width: 25.170068%; /* 286.666667px/980px */
 }
 
-#event-pricing a.button{
+/*#event-pricing a.button{
 	display: block;
-}
+}*/
 
 #event-pricing ul li, #event-pricing h2, #event-pricing p{
 	text-align: center;
 }
 
 #event-pricing ul{
-	height: 350px;
+	max-height: 100%;
+}
+
+#event-pricing li{
+	display: block;
+	padding: 2.040816%;
+	margin: 2.040816% 0;
+	border-bottom: 1px inset #303030;
+}
+
+.price{
+	color: #f4d64a;
+	display: block;
+	font: 300 1.5em/1.250em oswald, sans-serif;
 }
 
 /*======Contact======*/
@@ -378,27 +398,50 @@ footer p{
 	Media Queries
   =========================================================================*/
   
-/*======iPad Landscape======
+/*--------------- Tablet portrait to regular browser ------------------*/
+/* ------------------------------------------------------------------- */
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+
+/* --------------------------- Global Styles ------------------------- */
+
   
-  @media screen and (min-width: 768px) and (max-width: 1024px){
-  
-  img[alt*="logo"]{
+/*  img[alt*="logo"]{
   display: block;
   }
   
   nav ul{
   	float: left;
   	clear: left;
+  }*/
+  
+  /*home styles*/ 
+  
+  nav {
+  	float: left;
+  }
+    
+  form ul li{
+  	width: 48%;
+  }
+    
+  input, select{
+  	width: 100%;
   }
   
+    
   
+     
 }
   
-  ======iPad Portrait======
+/*------------- Mobile landscape to tablet portrait ------------------*/
+/* ------------------------------------------------------------------- */
+
+@media screen and (min-width: 480px) and (max-width: 767px){
+
+/* --------------------------- Global Styles ------------------------- */
   
-  @media screen and (min-width: 481px) and (max-width: 768px){
-  
-  	.cta{
+/*  	.cta{
   		width: 46.395833%;
   	}
   
@@ -406,28 +449,59 @@ footer p{
   		border-top: 1px #303030 outset;
   		clear: both;
   		width: 100%;
-  	}
+  	}*/
   
 	img[alt*="icon"]{
 		max-width: 25%;
 	}
+	
+	nav {
+		float: left;
+	}
+	
+	.cta, .button, button, input, select, form ul li{
+		float: none;
+		width: 100%;
+	}
+	
+	
 }
   
-  ======iPhone======
-  
-  @media screen and (max-width: 480px){
-  
-	img, .bevel, .cta, #forms li, #forms li a,
-	.column-1, .column-2, .column-3{
-		float: none;
+/* --------------- Mobile portrait to mobile landscape -----------------*/
+/* ------------------------------------------------------------------- */
+
+@media screen and (max-width: 479px){
+
+/* --------------------------- Global Styles ------------------------- */
+ 
+  	
+  	.cta{
+  		float: none;
+  		width: 100%;
+  	}
+  	
+  	nav {
+  		float: left;
+  	}
+  	
+  	.button, button, a.button{
+  		display: block;
+  		max-width: 100%;
+  	}
+  	
+  	#forms ul, #forms ul li, input, button, select{
+  		float: none;
+  		width: 100%;
+  	}
+  	
+  	#standard, #premium, #ultimate{
+  		float: none;
+  		max-width: 100%;
+  		margin: 2.040816% auto;
   	}
   
-  	#event-types p, #event-types>ul{
-  		padding-left: 0;
-  	}
   
-  
-}*/
+}
 
   
   
