@@ -1,0 +1,263 @@
+
+
+#header-wrapper, #footer-wrapper{
+	background-color: #111;
+	color: #606060;
+	padding: 0.9375em;
+}
+
+#home-wrapper{
+	background: url(../img/cta_bg.png) center top no-repeat;
+}
+
+#event-wrapper{
+	background: url(../img/events_bg.png) center top no-repeat;
+}
+
+#contact-wrapper{
+	background: url(../img/contact_bg.png) center top no-repeat;
+}
+
+#about-wrapper{
+	background: url(../img/about_bg.png) center top no-repeat;
+}
+
+#main-cta{
+	padding: 5.102004% 0 0 0;
+}
+
+nav.top-bar li a{
+	font: 300 1.250em/1.250em oswald, sans-serif;
+}
+
+.top-bar-section ul li.active > a{
+	background: #111;
+	color: #0aaad6;
+}
+
+#sub-cta, #faqs, #about-us, #party, #school, #corp{
+	background-color: #111;
+	color: #606060;
+	margin: 2.040816% auto;
+	padding: 0.9375em;
+}
+
+#wrapper{
+	background: url(../img/bg_texture.jpg);
+}
+
+h1{
+	font: 300 3em/1.250em oswald, sans-serif; 
+	text-shadow: 1px 0px 3px #000;
+}
+
+h2{
+	color: #ee3591;
+	font: 300 2em/1.2em oswald, sans-serif;
+}
+
+p, ul{
+	color: #aaa;
+	font: 400 1em/1.5em "Droid Sans", sans-serif;
+}
+
+header h1{
+	font-size: 0.1875em;
+	margin: 0;
+	padding: 0;
+	text-indent: -99000px;
+}
+
+#sub-cta h2{
+	color: #ee3591;
+	font: 300 1.750em/1.2em oswald, sans-serif;
+	padding: 0.625em;
+}
+
+#sub-cta img{
+	float: left;
+	max-width: 33%;
+	padding: 0.625em;
+}
+.section-container.auto .section.active .content, .section-container.auto .section.active p.title, .section .title {
+	background-color: #151515;
+	border: #151515;
+}
+.section-container.auto .section.active p.title a{
+	color: #ee3591;
+	font: 300 1.375em/1.5em oswald, sans-serif;
+}
+
+.section-container.auto .section p.title a{
+	background: #151515;
+	color: #f4d64a;
+	font: 300 1.375em/1.5em oswald, sans-serif;
+}
+
+.section-container.auto .section p.title{
+	border: #151515;
+	color: #ee3591;
+}
+
+.section-container.auto .section p.title a:hover{
+	color: #ee3591;
+}
+
+.section-container.auto .section p.title:hover{
+	background: #151515;
+	border: #151515;
+	color: #ee3591;
+}
+.section-container.auto > section:last-child .title, .section-container.auto > .section:last-child .title {
+    border-right: none;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	color: #f4d64a;
+	font: 300 1.375em/1.5em oswald, sans-serif;
+} 
+
+#requests a, #equipment a, #set-up a, #locations a,
+#requirements a, #payments a{
+	font: 300 0.75em/1em "Droid sans", sans-serif;
+	margin: 0;
+	padding: 0 0 0 2.040816%;
+}
+
+.heading {
+	text-align: center;
+	max-width: 90%;
+	margin: 0.9375em auto;
+}
+
+label{
+	color: #aaa;
+   	font: 300 .875em/1.250em "Droid sans", sans-serif;
+   	padding: 0.313em;
+}
+
+input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], 
+input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], 
+input[type="tel"], input[type="time"], input[type="url"], textarea{
+   	color: #aaa;
+   	font: 300 .875em/1.250em "Droid sans", sans-serif;
+   	border: none;
+   	border-top: 2px solid #000;
+   	border-left: 2px solid #000;
+   	box-shadow: 1px 2px 0 #2f2f2f;
+   	background-color: #151515;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, 
+input[type="month"]:focus, input[type="week"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, 
+input[type="tel"]:focus, input[type="time"]:focus, input[type="url"]:focus, textarea:focus{
+	background: #000;
+	border-top: 2px solid #2f2f2f;
+   	border-left: 2px solid #2f2f2f;
+	box-shadow: none;
+}
+
+form.custom .custom.dropdown ul, pdown.open, form.custom .custom{
+	color: #aaa;
+   	font: 300 1.250em/1.250em "Droid sans", sans-serif;
+   	border-top: 2px solid #000;
+   	border-left: 2px solid #000;
+   	box-shadow: 1px 2px 0 #2f2f2f;
+   	background: #151515;
+}
+
+form.custom .custom.dropdown .current {
+	color: #aaa;
+	box-shadow: none;
+	font: 300 1em/1.250em "Droid sans", sans-serif;
+	padding-top: 0.5em;
+}
+
+form.custom .custom.dropdown .selector:after{
+	margin-top: -10px;
+}
+
+form.custom .custom.dropdown:hover a.selector:after, form.custom .custom.dropdown.open a.selector:after{
+	border-color: transparent;
+	color: #aaa;
+}
+
+form.custom .custom.dropdown ul li.selected, form.custom .custom.dropdown ul li:hover,
+form.custom .custom.dropdown ul li.selected:hover{
+	background: #252525;
+	color: #aaa;
+}
+
+form.custom .custom.dropdown{
+	background: linear-gradient(to bottom, #151515 0%, #303030 100%) repeat scroll 0 0 transparent;
+	border-right: none;
+	border-bottom: none;
+	border-top: 2px solid #2f2f2f;
+   	border-left: 2px solid #2f2f2f;
+	box-shadow: 1px 2px 0 #000;
+}
+
+.pricing-table li.title {
+	background-color: #151515;
+	border-bottom: 1px solid #000;
+	border-top: 1px solid #202020;
+	color: #ee3591;
+	font: 300 2em/1.2em oswald, sans-serif;
+}
+
+.pricing-table li.price, .pricing-table li.bullet-item, .pricing-table li.description{
+	background-color: #151515;
+	border-top: 1px solid #202020;
+	border-bottom: 1px solid #000;
+	color: #aaa;
+}
+
+.pricing-table li.description, .pricing-table li.cta-button, .pricing-table li.price{
+	background-color: #151515;
+	border-top: 1px solid #202020;
+	border-bottom: 1px solid #000;
+	color: #aaa;
+}
+
+.pricing-table{
+	border: none;
+}
+
+.pricing-table li.price{
+	color: #f4d64a;
+	font: 300 1.250em/1.2em oswald, sans-serif;
+}
+
+#school ul, #party ul, #corp ul{
+	display: inline;
+	float: left;
+	position: relative;
+	top: 12px;
+}
+
+#school ul li, #party ul li, #corp ul li{
+	float: left;
+	padding-right: 1em;
+}
+
+#school h2, #party h2, #corp h2{
+	float: left;
+	padding-right: 1em;
+}
+
+#school p, #party p, #corp p{
+	clear: left;
+}
+
+#school img, #party img, #corp img{
+	border: 5px solid #202020;
+}
+
+
+
+
+
