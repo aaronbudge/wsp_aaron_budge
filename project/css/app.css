@@ -119,15 +119,19 @@ header h1{
 
 .section-container.auto .section.active .content, .section-container.auto .section.active p.title, .section .title {
 	background-color: #151515;
-	border: none;
+	border-color: #000;
 }
 .section-container.auto .section.active p.title a{
+	background: #151515;
+	border: none;
 	color: #ee3591;
 	font: 300 1.375em/1.5em oswald, sans-serif;
 }
 
 .section-container.auto .section p.title a{
-	background: #151515;
+	background: #111;
+	border-bottom: 1px solid #000;
+	border-top: 1px solid #202020;
 	color: #f4d64a;
 	font: 300 1.375em/1.5em oswald, sans-serif;
 }
@@ -143,7 +147,6 @@ header h1{
 
 .section-container.auto .section p.title:hover{
 	background: #151515;
-	border: none;
 	color: #ee3591;
 }
 .section-container.auto > section:last-child .title, .section-container.auto > .section:last-child .title {
@@ -210,6 +213,7 @@ form.custom .custom.dropdown ul li.selected:hover{
 
 form.custom .custom.dropdown{
 	background: linear-gradient(to bottom, #151515 0%, #303030 100%) repeat scroll 0 0 transparent;
+	background: -webkit-linear-gradient(top, #151515 0%, #303030 100%);	
 	border-right: none;
 	border-bottom: none;
 	border-top: 2px solid #2f2f2f;
