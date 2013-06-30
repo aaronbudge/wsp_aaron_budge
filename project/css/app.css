@@ -113,6 +113,17 @@ header h1{
 	margin: 0.9375em auto;
 }
 
+
+#event-wrapper ul li a{
+	padding-right: 30px;
+	background:  url(../img/arrows.png)no-repeat right center;
+}
+
+#home-wrapper section a:not(.button){
+	padding-right: 50px;
+	background: url('../img/3_arrows.png') no-repeat right center;
+}
+
 /*==========================================================================
 	Forms
   =========================================================================*/
