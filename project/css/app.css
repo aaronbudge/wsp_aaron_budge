@@ -1,7 +1,15 @@
+/*==========================================================================
+	Page Layout
+  =========================================================================*/
+
 #header-wrapper, #footer-wrapper{
 	background-color: #111;
 	color: #606060;
 	padding: 0.9375em;
+}
+
+#wrapper{
+	background: url(../img/bg_texture.jpg);
 }
 
 #home-wrapper{
@@ -20,9 +28,26 @@
 	background: url(../img/about_bg.png) center top no-repeat;
 }
 
+#sub-cta, #faqs, #about-us, #party, #school, #corp{
+	background-color: #111;
+	color: #606060;
+	margin: 2.040816% auto;
+	padding: 0.9375em;
+}
+
 #main-cta{
 	padding: 5.102004% 0 0 0;
 }
+
+#sub-cta img{
+	float: left;
+	max-width: 33%;
+	padding: 0.625em;
+}
+
+/*==========================================================================
+	Navigation
+  =========================================================================*/
 
 nav.top-bar li a{
 	font: 300 1.250em/1.250em oswald, sans-serif;
@@ -33,16 +58,9 @@ nav.top-bar li a{
 	color: #0aaad6;
 }
 
-#sub-cta, #faqs, #about-us, #party, #school, #corp{
-	background-color: #111;
-	color: #606060;
-	margin: 2.040816% auto;
-	padding: 0.9375em;
-}
-
-#wrapper{
-	background: url(../img/bg_texture.jpg);
-}
+/*==========================================================================
+	Typography
+  =========================================================================*/
 
 h1{
 	font: 300 3em/1.250em oswald, sans-serif; 
@@ -59,6 +77,16 @@ p, ul{
 	font: 400 1em/1.5em "Droid Sans", sans-serif;
 }
 
+ul {
+	list-style-type: none;
+}
+
+a {
+	color: #f4d64a;
+	font: 300 1.375em/1.5em oswald, sans-serif;
+} 
+
+
 header h1{
 	font-size: 0.1875em;
 	margin: 0;
@@ -72,11 +100,23 @@ header h1{
 	padding: 0.625em;
 }
 
-#sub-cta img{
-	float: left;
-	max-width: 33%;
-	padding: 0.625em;
+#requests a, #equipment a, #set-up a, #locations a,
+#requirements a, #payments a{
+	font: 300 0.75em/1em "Droid sans", sans-serif;
+	margin: 0;
+	padding: 0 0 0 2.040816%;
 }
+
+.heading {
+	text-align: center;
+	max-width: 90%;
+	margin: 0.9375em auto;
+}
+
+/*==========================================================================
+	Forms
+  =========================================================================*/
+
 .section-container.auto .section.active .content, .section-container.auto .section.active p.title, .section .title {
 	background-color: #151515;
 	border: none;
@@ -108,28 +148,6 @@ header h1{
 }
 .section-container.auto > section:last-child .title, .section-container.auto > .section:last-child .title {
     border-right: none;
-}
-
-ul {
-	list-style-type: none;
-}
-
-a {
-	color: #f4d64a;
-	font: 300 1.375em/1.5em oswald, sans-serif;
-} 
-
-#requests a, #equipment a, #set-up a, #locations a,
-#requirements a, #payments a{
-	font: 300 0.75em/1em "Droid sans", sans-serif;
-	margin: 0;
-	padding: 0 0 0 2.040816%;
-}
-
-.heading {
-	text-align: center;
-	max-width: 90%;
-	margin: 0.9375em auto;
 }
 
 label{
@@ -199,6 +217,10 @@ form.custom .custom.dropdown{
 	box-shadow: 1px 2px 0 #000;
 }
 
+/*==========================================================================
+	Pricing
+  =========================================================================*/
+
 .pricing-table li.title {
 	background-color: #151515;
 	border-bottom: 1px solid #000;
@@ -229,6 +251,10 @@ form.custom .custom.dropdown{
 	color: #f4d64a;
 	font: 300 1.250em/1.2em oswald, sans-serif;
 }
+
+/*==========================================================================
+	Events
+  =========================================================================*/
 
 #school ul, #party ul, #corp ul{
 	display: inline;
