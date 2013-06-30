@@ -4,7 +4,9 @@
 
 #header-wrapper, #footer-wrapper{
 	background-color: #111;
-	color: #606060;
+	-webkit-box-shadow: rgba(0,0,0,1) 1px 1px 5px;
+	-moz-box-shadow: rgba(0,0,0,1) 1px 1px 5px;
+	box-shadow: rgba(0,0,0,1) 1px 1px 5px;
 	padding: 0.9375em;
 }
 
@@ -45,11 +47,18 @@
 	padding: 0.625em;
 }
 
+hr{
+	border-bottom: 1px solid #202020;
+	border-top: 1px solid #000;
+}
+
 /*==========================================================================
 	Navigation
   =========================================================================*/
 
 nav.top-bar li a{
+	color: #aaa;
+	background: #111;
 	font: 300 1.250em/1.250em oswald, sans-serif;
 }
 
@@ -83,7 +92,7 @@ ul {
 
 a {
 	color: #f4d64a;
-	font: 300 1.375em/1.5em oswald, sans-serif;
+	font: 300 1.250em/1.5em oswald, sans-serif;
 } 
 
 
@@ -113,15 +122,25 @@ header h1{
 	margin: 0.9375em auto;
 }
 
+/*==========================================================================
+	Links
+  =========================================================================*/
 
 #event-wrapper ul li a{
-	padding-right: 30px;
 	background:  url(../img/arrows.png)no-repeat right center;
+	float: right;
+	padding-right: 30px;
 }
 
 #home-wrapper section a:not(.button){
-	padding-right: 50px;
-	background: url('../img/3_arrows.png') no-repeat right center;
+	float: right;
+	background: url(../img/arrows.png) no-repeat right;
+	padding-right: 35px;
+}
+
+button, .button{
+	font: 400 1.125em/1.250em "Droid sans", sans-serif;
+	text-shadow: rgba(1,1,1,.2) 1px 1px 0;
 }
 
 /*==========================================================================
@@ -233,6 +252,35 @@ form.custom .custom.dropdown{
 }
 
 /*==========================================================================
+	Events
+  =========================================================================*/
+
+#school ul, #party ul, #corp ul{
+	display: inline;
+	float: left;
+	position: relative;
+	top: 12px;
+}
+
+#school ul li, #party ul li, #corp ul li{
+	float: left;
+	padding-right: 1em;
+}
+
+#school h2, #party h2, #corp h2{
+	float: left;
+	padding-right: 1em;
+}
+
+#school p, #party p, #corp p{
+	clear: left;
+}
+
+#school img, #party img, #corp img{
+	border: 5px solid #202020;
+}
+
+/*==========================================================================
 	Pricing
   =========================================================================*/
 
@@ -268,32 +316,43 @@ form.custom .custom.dropdown{
 }
 
 /*==========================================================================
-	Events
+	FAQ's
   =========================================================================*/
 
-#school ul, #party ul, #corp ul{
-	display: inline;
-	float: left;
-	position: relative;
-	top: 12px;
+#requests, #equpiment, #set-up, #locations, #requirements{
+	border-bottom: 1px solid #000;
+	border-top: 1px solid #202020;
 }
 
-#school ul li, #party ul li, #corp ul li{
-	float: left;
-	padding-right: 1em;
+#payments{
+	border-top: 1px solid #202020;
 }
 
-#school h2, #party h2, #corp h2{
-	float: left;
-	padding-right: 1em;
+/*==========================================================================
+	Additional Media Styles
+  =========================================================================*/
+@media screen and (max-width: 768px) {
+	
+	nav.top-bar li a, #sub-cta .large-4.columns:nth-child(2n){
+		border-bottom: 1px solid #000;
+		border-top: 1px solid #202020;
+	}
+	
+	#sub-cta .large-4.columns:nth-child(1n){
+		border-bottom: 1px solid #000;
+	}
+
+	#sub-cta .large-4.columns:nth-child(3n){
+		border-top: 1px solid #202020;
+	}
 }
 
-#school p, #party p, #corp p{
-	clear: left;
-}
+@media screen and (min-width: 768px) {
 
-#school img, #party img, #corp img{
-	border: 5px solid #202020;
+	nav.top-bar{
+		position: relative;
+		top: 30px;
+	}
 }
 
 
