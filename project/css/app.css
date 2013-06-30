@@ -95,7 +95,6 @@ a {
 	font: 300 1.250em/1.5em oswald, sans-serif;
 } 
 
-
 header h1{
 	font-size: 0.1875em;
 	margin: 0;
@@ -151,6 +150,7 @@ button, .button{
 	background-color: #151515;
 	border-color: #000;
 }
+
 .section-container.auto .section.active p.title a{
 	background: #151515;
 	border: none;
